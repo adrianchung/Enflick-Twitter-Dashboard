@@ -1,1 +1,3 @@
-Message me if you need a hand getting this to work
+Infinite scrolling dashboard for updates to @enflick
+
+https://github.com/thomasdavis/backbonetutorials used as a base

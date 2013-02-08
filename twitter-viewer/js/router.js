@@ -2,9 +2,8 @@
 define([
   'jquery',
   'underscore',
-  'backbone',
-	'vm'
-], function ($, _, Backbone, Vm) {
+  'backbone'
+], function ($, _, Backbone) {
   var AppRouter = Backbone.Router.extend({
     routes: {
       '*actions': 'defaultAction' // All urls will trigger this route
@@ -16,9 +15,19 @@ define([
     var router = new AppRouter(options);
 
 		router.on('route:defaultAction', function (actions) {
-			require(['views/twitter/widget'], function (TwitterWidget) {
-        var twitterWidget = Vm.create(appView, 'TwitterWidget', TwitterWidget);
-        twitterWidget.render();
+			require([
+        'views/twitter/textnow-widget',
+        'views/twitter/touch-widget',
+        'views/twitter/enflick-widget'
+      ], function (TextNowWidget, TouchWidget, EnflickWidget) {
+        var textNowWidget = new TextNowWidget();
+        textNowWidget.render();
+
+        var touchWidget = new TouchWidget();
+        touchWidget.render();
+
+        var enflickWidget = new EnflickWidget();
+        enflickWidget.render();
       });
 		});
     

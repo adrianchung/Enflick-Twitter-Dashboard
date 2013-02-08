@@ -5,7 +5,7 @@
 @import url("normalize.css");
 
 /* Custom themes */
-@import url("theme.css");
-@import url("menus.css");
-@import url("layout.css");
-
+@import "theme.css";
+@import "menus.css";
+@import "layout.css";
+@import "bootstrap.min.css";

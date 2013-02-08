@@ -1,37 +1,44 @@
-.container {
-  background-color: #fff;
-}
-body {
-  color: #444;
-
-}
-.twitter-widget {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 500px;
-}
-code {
-  border:1px dashed #E1E1E1;
-  color:#333344;
-  background:#FAFAFA;
-  font-family:monospace;
-  overflow:auto;
-  font-size:11px;
-  padding:0.2em;
+.widget {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    width: 300px;
 }
 
-a, a:visited {
-  color: #444;
+.twitter-textnow-widget {
+
 }
- 
-a:hover {
-  color: #000;
-  text-decoration: none;
-} 
+
+.twitter-touch-widget {
+
+}
+
+.twitter-enflick-widget {
+}
+
+.twitter-textnow-page {
+    position: absolute;
+    left: 320px;
+
+}
+
+.twitter-touch-page {
+    position: absolute;
+    left: 640px;
+}
+
+.twitter-enflick-page {
+    position: absolute;
+    left: 0;
+}
 
 .tweets {
-  list-style: none;
+    list-style: none;
 }
 .tweets li {
-  margin-top: 50px;
+    margin-top: 30px;
+}
+
+.author {
+    font-weight: bold;
 }
