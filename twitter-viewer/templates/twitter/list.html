@@ -1,0 +1,12 @@
+<ul class="tweets">
+<% _.each(tweets, function (tweet) { %>
+
+  <li>
+      <div class="tweet-entry">
+          <span><%= tweet.get('from_user') %></span>
+          <p><%= tweet.get('text') %></p>
+      </div>
+  </li>
+
+<% }); %>
+</ul>
